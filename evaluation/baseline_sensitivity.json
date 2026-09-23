@@ -1,0 +1,54 @@
+{
+  "protocol": "Post-run MPS sensitivity audit, separate from the original same-CUDA main comparison",
+  "selection": {
+    "selected_rendering": "semantic",
+    "dev_metrics": {
+      "neutral": {
+        "accuracy": 0.7714285714285715,
+        "macro_f1": 0.7459788544523509,
+        "nll": 0.6996133521392657,
+        "brier": 0.3261039060421592,
+        "ece": 0.12216485276160671
+      },
+      "semantic": {
+        "accuracy": 0.7838095238095237,
+        "macro_f1": 0.7599396892684371,
+        "nll": 0.718921979422934,
+        "brier": 0.3180294403591556,
+        "ece": 0.12064957876186524
+      }
+    },
+    "criterion": "highest real-label dev macro accuracy, then lower dev NLL",
+    "device": "mps",
+    "scope": "Post-run sensitivity audit of Laya choice-key formatting, not a new training experiment. No test-based rendering selection."
+  },
+  "english_semantic_real_macro": {
+    "accuracy": 0.7484148342632099,
+    "macro_f1": 0.7329973270680202,
+    "nll": 0.6309314045108828,
+    "brier": 0.3475500737329656,
+    "ece": 0.12349987305363984
+  },
+  "v2_point_wins_vs_english_semantic": 10,
+  "typed_native_teacher_metrics": {
+    "accuracy": 0.7475,
+    "macro_f1": 0.6203131476624142,
+    "nll": 0.8965023905846662,
+    "brier": 0.06935947732109757,
+    "ece": 0.17598656338286872
+  },
+  "v2_typed_teacher_metrics": {
+    "accuracy": 0.7345,
+    "macro_f1": 0.5843823268841445,
+    "nll": 0.9071323454613555,
+    "brier": 0.07585474596137866,
+    "ece": 0.13429560744677668
+  },
+  "native_typed_accuracy_gap_pp": -1.3000000000000012,
+  "caveats": [
+    "Development rendering selection used real-label macro accuracy, not test results.",
+    "This is a device/rendering sensitivity check; do not merge it into the original same-GPU experiment.",
+    "The typed checkpoint has upstream training exposure to the public train split from which these calibration examples were drawn.",
+    "Teacher agreement is not real-world correctness; probability matching is described by soft NLL/Brier."
+  ]
+}

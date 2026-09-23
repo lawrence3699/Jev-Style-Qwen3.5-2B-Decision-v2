@@ -1,0 +1,14 @@
+seed: 42
+model: artifacts/v1_unscaled
+data: data
+output: runs/h100
+baseline_dev_metrics: runs/baselines/v1/dev.metrics.json
+challenge_weights: runs/challenge_weights.json
+micro_batch: 8
+effective_batch: 64
+eval_batch: 16
+max_length: 1024
+gradient_checkpointing: true
+max_steps: 1000
+max_tokens: 32800000
+training_hours: 6

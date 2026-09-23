@@ -1,0 +1,13 @@
+{
+  "interface": "exact option logits at last prompt position",
+  "temperature_folded": false,
+  "base": "Jev-Style v1 uncalibrated text backbone",
+  "adapter": "rank-32 continued training; selected step 1000",
+  "max_options": 26,
+  "max_length": 1024,
+  "qk_normalization": "mlx-lm-0.31.3 RMS epsilon=1e-6 (effective L2 epsilon=head_dim*1e-6); use jev_h100 inference",
+  "calibration": {
+    "cuda_cpu": "calibration.json",
+    "mlx": "calibration.mlx.json"
+  }
+}

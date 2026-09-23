@@ -1,0 +1,43 @@
+{
+  "reference_artifact": "runs/adapter_delivery",
+  "reference_n": 5277,
+  "argmax_agreement": 0.9931779420125071,
+  "reference_real_label_macro": {
+    "accuracy": 0.8120490099551472,
+    "macro_f1": 0.797772564877388,
+    "nll": 0.5153573778298738,
+    "brier": 0.27870374107073076,
+    "ece": 0.09100670643474301
+  },
+  "merged_real_label_macro": {
+    "accuracy": 0.8126802319221091,
+    "macro_f1": 0.8001209439212814,
+    "nll": 0.5159179622949644,
+    "brier": 0.27863154879176094,
+    "ece": 0.08867728726855445
+  },
+  "merged_minus_reference": {
+    "accuracy": 0.0006312219669619701,
+    "macro_f1": 0.0023483790438934005,
+    "nll": 0.0005605844650906633,
+    "brier": -7.219227896981817e-05,
+    "ece": -0.002329419166188562
+  },
+  "numerical_parity_gate_passed": false,
+  "original_numerical_check": {
+    "n": 64,
+    "argmax_agreement": 1.0,
+    "maximum_probability_difference": 0.028307310774959238,
+    "passed": false,
+    "note": "BF16 merge rounding can change probabilities slightly; export remains separately calibrated."
+  },
+  "functional_deployment_gate_passed": true,
+  "criteria": {
+    "argmax_agreement_min": 0.99,
+    "accuracy_loss_max": 0.003,
+    "nll_increase_max": 0.01,
+    "brier_increase_max": 0.005,
+    "ece_increase_max": 0.005
+  },
+  "calibration": "Refitted on the original calibration split only. Test results were not used to fit weights or temperature."
+}

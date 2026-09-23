@@ -1,0 +1,146 @@
+{
+  "temperature": 1.0395858664552586,
+  "by_task": {
+    "ag_news": {
+      "n": 300,
+      "accuracy": 0.8766666666666667,
+      "macro_f1": 0.8788281077278692,
+      "nll": 0.31174987412947525,
+      "brier": 0.16488833934547717,
+      "ece": 0.033878463780584275,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "anli": {
+      "n": 300,
+      "accuracy": 0.49,
+      "macro_f1": 0.4918698121890673,
+      "nll": 1.5368338339359842,
+      "brier": 0.7841393699724928,
+      "ece": 0.28948762150504653,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "boolq": {
+      "n": 300,
+      "accuracy": 0.82,
+      "macro_f1": 0.8135015656658684,
+      "nll": 0.39792445540300575,
+      "brier": 0.23701425760316744,
+      "ece": 0.07079027215261723,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "emotion": {
+      "n": 300,
+      "accuracy": 0.8566666666666667,
+      "macro_f1": 0.7767517228948891,
+      "nll": 0.40050932993163985,
+      "brier": 0.2146090575490912,
+      "ece": 0.04925280531855522,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "enron_spam": {
+      "n": 300,
+      "accuracy": 0.9766666666666667,
+      "macro_f1": 0.9766352540637968,
+      "nll": 0.040588467334707196,
+      "brier": 0.02559463566053579,
+      "ece": 0.015000148656187472,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "hans": {
+      "n": 300,
+      "accuracy": 0.68,
+      "macro_f1": 0.6483516483516483,
+      "nll": 1.0855625750828168,
+      "brier": 0.5543636601766649,
+      "ece": 0.279474386206493,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "imdb": {
+      "n": 300,
+      "accuracy": 0.9633333333333334,
+      "macro_f1": 0.9632643519497723,
+      "nll": 0.10626873136736843,
+      "brier": 0.06019065443893428,
+      "ece": 0.01781192474283783,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "mnli": {
+      "n": 300,
+      "accuracy": 0.8766666666666667,
+      "macro_f1": 0.8778806367907989,
+      "nll": 0.30799399957949397,
+      "brier": 0.17920017361216034,
+      "ece": 0.055112685388420506,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "rte": {
+      "n": 277,
+      "accuracy": 0.8628158844765343,
+      "macro_f1": 0.8590972370957378,
+      "nll": 0.4515673771314527,
+      "brier": 0.23603649370491994,
+      "ece": 0.0858961250185757,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "sst2": {
+      "n": 300,
+      "accuracy": 0.9266666666666666,
+      "macro_f1": 0.9265850945494994,
+      "nll": 0.18595227041463483,
+      "brier": 0.105108476114516,
+      "ece": 0.03968671876382707,
+      "reference": "label",
+      "normalized_score_mae": null
+    },
+    "sst5": {
+      "n": 300,
+      "accuracy": 0.61,
+      "macro_f1": 0.5885649518551477,
+      "nll": 0.8501466709340286,
+      "brier": 0.5038019185314107,
+      "ece": 0.039059008420954056,
+      "reference": "label",
+      "normalized_score_mae": 0.11669595700098573
+    },
+    "typed_decisions": {
+      "n": 2000,
+      "accuracy": 0.7295,
+      "macro_f1": 0.573006519854172,
+      "nll": 0.9065755754330037,
+      "brier": 0.0755209572487936,
+      "ece": 0.1301122711236403,
+      "reference": "teacher",
+      "normalized_score_mae": 0.08259669224817098
+    }
+  },
+  "real_label_macro": {
+    "accuracy": 0.8126802319221091,
+    "macro_f1": 0.8001209439212814,
+    "nll": 0.5159179622949644,
+    "brier": 0.27863154879176094,
+    "ece": 0.08867728726855445
+  },
+  "teacher_macro": {
+    "accuracy": 0.7295,
+    "macro_f1": 0.573006519854172,
+    "nll": 0.9065755754330037,
+    "brier": 0.0755209572487936,
+    "ece": 0.1301122711236403
+  },
+  "core_macro": {
+    "accuracy": 0.8219999999999998,
+    "macro_f1": 0.8170720713178368,
+    "nll": 0.4107534540921277,
+    "brier": 0.23800263304134633,
+    "ece": 0.04770542970128063
+  }
+}

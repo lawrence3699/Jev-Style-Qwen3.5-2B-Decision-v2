@@ -1,0 +1,134 @@
+{
+  "LICENSE": {
+    "bytes": 11343,
+    "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32"
+  },
+  "README.md": {
+    "bytes": 11040,
+    "sha256": "a26de0c58bc0ae1ccfe626b375152036599f4b962f2630669f1dcfd6a3399d3e"
+  },
+  "calibration.json": {
+    "bytes": 358,
+    "sha256": "649b7e75faea331b68e9718baafdb474aad81c0b3698381078bc0a489bd34c6d"
+  },
+  "calibration.mlx.json": {
+    "bytes": 362,
+    "sha256": "d9dbb2354233214fc7ae31937583b6959ac97f15755d72027e3589770e439c1d"
+  },
+  "chat_template.jinja": {
+    "bytes": 29,
+    "sha256": "c89ccc96b9280cec1ce79c1985cb0e18efe9c839d9434e0971a87cc7907553dc"
+  },
+  "config.json": {
+    "bytes": 1766,
+    "sha256": "1d76c4aef2c5dfcc44bf54d21d7495e213d8ae9069935d799e183c6fcf10578e"
+  },
+  "decision_config.json": {
+    "bytes": 466,
+    "sha256": "a52adb1fb859fb8bea4c41e5b4cc07bc2a49f250ceef482d8755efd95d856363"
+  },
+  "evaluation/baseline_sensitivity.json": {
+    "bytes": 2015,
+    "sha256": "aadc4566710a397044edbfb9c353ee2e0baf14a6deb5e30f4234eabd66294026"
+  },
+  "evaluation/data_manifest.json": {
+    "bytes": 10680,
+    "sha256": "8d03d4bba9400ffe062b248733213a6e67a3d6c187340e9aa796c319f2feef23"
+  },
+  "evaluation/deployment.json": {
+    "bytes": 1404,
+    "sha256": "0c33f05f1761ba44519a9dd1f85b00684eeac356d4fd82e36cdc06b1735cc027"
+  },
+  "evaluation/laya_source.json": {
+    "bytes": 97,
+    "sha256": "b12ecce8dca6afad9e43c31c2385be255514d78856009ef9a6222bc955ca0757"
+  },
+  "evaluation/laya_typed_source.json": {
+    "bytes": 113,
+    "sha256": "c2c2bc4931bb489636c5471f25f2fa31c3baca347c0465f119b8039aac1d3619"
+  },
+  "evaluation/reference_comparison.json": {
+    "bytes": 27042,
+    "sha256": "36f56a490fc67e774cbb25b38d4dc9b5e3a42e1f65fcd748af092e127a98eff8"
+  },
+  "evaluation/test.metrics.json": {
+    "bytes": 3962,
+    "sha256": "0ba04327ab8d6a5d39899174a7a8fa552cd65abe861ef0e68cab688a1fcf375d"
+  },
+  "generation_config.json": {
+    "bytes": 117,
+    "sha256": "781b10c2d2c264c99a5d3e1458d403fb5d8baf2ecfadbcfd92d107fe049261fb"
+  },
+  "jev_h100/__init__.py": {
+    "bytes": 85,
+    "sha256": "d35f7e49c0434681bb78544f55d3111d39a0a6b7e484b2f602e8effdc812e6fc"
+  },
+  "jev_h100/common.py": {
+    "bytes": 9176,
+    "sha256": "35fceca632470560fc57321be8698bfba5cf15eb4f37d501e13748884b4f54e9"
+  },
+  "jev_h100/decide.py": {
+    "bytes": 1040,
+    "sha256": "7f4f4831c18df6be18569cb96ecc537430df3a859fd897b87514bd76000c6bed"
+  },
+  "jev_h100/model.py": {
+    "bytes": 8802,
+    "sha256": "d095aedd4003e33cb91d1fdfb7af097ccad1f85d1dddf9e197c1a14713fa2741"
+  },
+  "jev_mlx_client.py": {
+    "bytes": 5397,
+    "sha256": "15038fc9d57e4acbea6de5a478a59f96e387710336f6d5837ba603bd4c55b93b"
+  },
+  "model.safetensors": {
+    "bytes": 3763687248,
+    "sha256": "dc0290f93034998e39dd7d1be19ba4c60474faca503982422cb1b05ff78e1f84"
+  },
+  "requirements-mlx.txt": {
+    "bytes": 48,
+    "sha256": "bd0ea5e5ec70be46d50f4b4bdc2576ddefc2f5e613c234fdc706b764029c9f3b"
+  },
+  "requirements.txt": {
+    "bytes": 93,
+    "sha256": "3d39fd6f9d3a7a983e0858bc6a8c82aff35e142333e50b29ddd04bbff7fe9c3b"
+  },
+  "tokenizer.json": {
+    "bytes": 19989325,
+    "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523"
+  },
+  "tokenizer_config.json": {
+    "bytes": 1156,
+    "sha256": "303f948bfd44621a24f1d90b6330d8280076d08b60152f5851d9e9921c0b570e"
+  },
+  "training_config.yaml": {
+    "bytes": 322,
+    "sha256": "70de5d7165570550427cfcf1718d1d292dd01fbaa5b97e3a7e8783cf108f73f8"
+  },
+  "evaluation/chart_data.json": {
+    "bytes": 4588,
+    "sha256": "0db9855803eb514792a906ff04b1d9ccdcba81babeedcffdd9ae34131f8b04f1"
+  },
+  "figures/calibration.svg": {
+    "bytes": 28967,
+    "sha256": "8433aa3a878362e977defe21ccc4400d63c3eba07afa7725535c6fa7fb93d0fc"
+  },
+  "figures/robustness.png": {
+    "bytes": 125258,
+    "sha256": "41c317f25853b88452c8515cddf8773fbcbd3d354ec718d90ab6bc01716bd4a0"
+  },
+  "figures/benchmark.png": {
+    "bytes": 188910,
+    "sha256": "5a3a782cf203a586a8ffa7bef3006a79906ad4553b8548af4b62a63f6723a6dc"
+  },
+  "figures/benchmark.svg": {
+    "bytes": 22570,
+    "sha256": "187ee46cfdccc078fa5725e9668b28dad2456b9920d6e1bc26f6ec133a9d5e0a"
+  },
+  "figures/robustness.svg": {
+    "bytes": 11821,
+    "sha256": "1f54a0e66a5bcceafad85595f91db1a0ed5f0eb6b4c45b726bafd8a941f53600"
+  },
+  "figures/calibration.png": {
+    "bytes": 183790,
+    "sha256": "2a4e163354b0d0d31bf5fcdfcfbcf726fb152fb2f6419432ddddaec3b475a921"
+  }
+}

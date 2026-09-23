@@ -1,0 +1,317 @@
+{
+  "version": "h100-v2-20260923",
+  "seed": 20260923,
+  "max_length": 1024,
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/SetFit/enron_spam/resolve/1916f66c89d52221ae33eb57d44498b4f3a5df22/train.jsonl",
+      "path": "source_project/h100_v2/data/sources/enron/train.jsonl",
+      "sha256": "b846cf15bcad7676c37ea3535622e39e6bff5c9c004f634513e4f9c2951e5f02",
+      "bytes": 101069043
+    },
+    {
+      "url": "https://huggingface.co/datasets/SetFit/enron_spam/resolve/1916f66c89d52221ae33eb57d44498b4f3a5df22/test.jsonl",
+      "path": "source_project/h100_v2/data/sources/enron/test.jsonl",
+      "sha256": "f07a4cca7bfc1d845d4ff59650e69a0ad31d9b5c0409ddad088219f7fc32bb52",
+      "bytes": 6273613
+    },
+    {
+      "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions/resolve/c76749ec58bd8c3d2ea706b31c333a9059c38f90/all/train-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/typed/train-00000-of-00001.parquet",
+      "sha256": "46a58d63edfd86e23229c78afe8b72307bb4ca9fb0e8df180cabb3c67ec9dcd5",
+      "bytes": 598824
+    },
+    {
+      "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions/resolve/c76749ec58bd8c3d2ea706b31c333a9059c38f90/all/test-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/typed/test-00000-of-00001.parquet",
+      "sha256": "4f294f218ea1da27f3efef936359389c62ea4d3973a41457732990f1d31b647c",
+      "bytes": 222140
+    },
+    {
+      "url": "https://huggingface.co/datasets/stanfordnlp/imdb/resolve/e6281661ce1c48d982bc483cf8a173c1bbeb5d31/plain_text/test-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/imdb/test-00000-of-00001.parquet",
+      "sha256": "b52e26e2f872d282ffac460bf9770b25ac6f102cda0e6ca7158df98c94e8b3da",
+      "bytes": 20470363
+    },
+    {
+      "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/test_r1-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/anli/test_r1-00000-of-00001.parquet",
+      "sha256": "c4a3d304c4671941d6bad5a07632a79713c5a1be485ccf75b81b6df93f61045e",
+      "bytes": 353376
+    },
+    {
+      "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/test_r2-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/anli/test_r2-00000-of-00001.parquet",
+      "sha256": "df5daccdd5623cfcaa34be0100721783485f4181a42796b1d0ac0cd7601e7acb",
+      "bytes": 361549
+    },
+    {
+      "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/test_r3-00000-of-00001.parquet",
+      "path": "source_project/h100_v2/data/sources/anli/test_r3-00000-of-00001.parquet",
+      "sha256": "3232c4217979da00b2cd6ed97d099a8a8edf04530193ea52e3c8d69190de92a2",
+      "bytes": 434550
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tommccoy1/hans/7299f6f657089ce06a0f98e7e81f8d0f5b7741ce/heuristics_evaluation_set.txt",
+      "path": "source_project/h100_v2/data/sources/hans/evaluation.tsv",
+      "sha256": "c55b62feef9913070e88f38938dc2492018c945ac81f70139346472494124e79",
+      "bytes": 15462062
+    },
+    {
+      "path": "source_project/data/calib.jsonl",
+      "sha256": "42097c0b0583e7ae6976d8b882374e9f5d9c0ad517d96866cf2f18fc39b21a6a",
+      "purpose": "exclude_v1_calibration_and_ood_from_training"
+    },
+    {
+      "path": "source_project/runs/b2_x4/holdout.jsonl",
+      "sha256": "e6e2e5dcc126565ffc88dbf589123522bf3c6b98568d750f00717ee29262db5f",
+      "purpose": "exclude_v1_calibration_and_ood_from_training"
+    },
+    {
+      "path": "source_project/data/eval_ood.jsonl",
+      "sha256": "0d8e6c82aa7f5701264e1af8423762f1e0bc93593ed47341a1fe0b5de8eba637",
+      "purpose": "exclude_v1_calibration_and_ood_from_training"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/nyu-mll___glue/sst2/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/glue-train.arrow",
+      "sha256": "47387d613631ae60c690f2dd67b8f80d0c39e36d9080ca438eb0f18e1ca4cb4a",
+      "task": "sst2"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/nyu-mll___glue/mnli/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/glue-train.arrow",
+      "sha256": "c53e4467acd3becf55c0f898391de3b453df8f0f4c98cb5e8cc8c4c706ecebca",
+      "task": "mnli"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/fancyzhx___ag_news/default/0.0.0/eb185aade064a813bc0b7f42de02595523103ca4/ag_news-train.arrow",
+      "sha256": "b3eec28c0aed7d6616f047cf5148d94aba4f475f3b905b3dc9d331fa3435d16d",
+      "task": "ag_news"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/google___boolq/default/0.0.0/35b264d03638db9f4ce671b711558bf7ff0f80d5/boolq-train.arrow",
+      "sha256": "297dd7c22cfaf5bbdde0467a2ec2eecab261118e8ee34f375a3326fc4ea6486e",
+      "task": "boolq"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/SetFit___sst5/default/0.0.0/e51bdcd8cd3a30da231967c1a249ba59361279a3/sst5-train.arrow",
+      "sha256": "c3221ca614196a083a72efecd569148782022d434999bbd4a1da73d52e2a64b3",
+      "task": "sst5"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/dair-ai___emotion/split/0.0.0/cab853a1dbdf4c42c2b3ef2173804746df8825fe/emotion-train.arrow",
+      "sha256": "d362b3fb7dabba0613533182e3e0dce2340972e5f90d9ee02783de28bdf8e095"
+    },
+    {
+      "path": "source_cache/huggingface/datasets/dair-ai___emotion/split/0.0.0/cab853a1dbdf4c42c2b3ef2173804746df8825fe/emotion-test.arrow",
+      "sha256": "3b039c3c9f5b0dd907e302b9e2e0c71278d66865883a3de4509841154aeaa115"
+    }
+  ],
+  "group_overlap_counts": {
+    "train__dev": 0,
+    "train__cal": 0,
+    "train__test": 0,
+    "train__counterfactual_test": 0,
+    "dev__cal": 0,
+    "dev__test": 0,
+    "dev__counterfactual_test": 0,
+    "cal__test": 0,
+    "cal__counterfactual_test": 0,
+    "test__counterfactual_test": 0
+  },
+  "sst_subphrases_excluded": 7213,
+  "length_audit": {
+    "legacy_test": {
+      "read": 1777,
+      "eligible": 1777,
+      "too_long": 0
+    },
+    "sst2": {
+      "read": 60000,
+      "eligible": 52933,
+      "too_long": 0
+    },
+    "mnli": {
+      "read": 60000,
+      "eligible": 59997,
+      "too_long": 0
+    },
+    "ag_news": {
+      "read": 60000,
+      "eligible": 59953,
+      "too_long": 0
+    },
+    "boolq": {
+      "read": 9427,
+      "eligible": 9427,
+      "too_long": 0
+    },
+    "sst5": {
+      "read": 8544,
+      "eligible": 8533,
+      "too_long": 0
+    },
+    "emotion_train": {
+      "read": 16000,
+      "eligible": 15969,
+      "too_long": 0
+    },
+    "emotion_test": {
+      "read": 2000,
+      "eligible": 2000,
+      "too_long": 0
+    },
+    "enron_train": {
+      "read": 31665,
+      "eligible": 26225,
+      "too_long": 2532
+    },
+    "enron_test": {
+      "read": 2000,
+      "eligible": 1830,
+      "too_long": 152
+    },
+    "imdb": {
+      "read": 25000,
+      "eligible": 24250,
+      "too_long": 551
+    },
+    "hans": {
+      "read": 30000,
+      "eligible": 30000,
+      "too_long": 0
+    },
+    "anli": {
+      "read": 3200,
+      "eligible": 3200,
+      "too_long": 0
+    },
+    "final_test": {
+      "read": 5277,
+      "eligible": 5277,
+      "too_long": 0
+    },
+    "typed_train": {
+      "read": 4000,
+      "eligible": 4000,
+      "too_long": 0
+    },
+    "typed_dev": {
+      "read": 1000,
+      "eligible": 1000,
+      "too_long": 0
+    },
+    "typed_cal": {
+      "read": 1000,
+      "eligible": 1000,
+      "too_long": 0
+    },
+    "selected_core": {
+      "read": 30000,
+      "eligible": 30000,
+      "too_long": 0
+    },
+    "selected_new": {
+      "read": 18000,
+      "eligible": 18000,
+      "too_long": 0
+    },
+    "selected_challenge": {
+      "read": 12000,
+      "eligible": 12000,
+      "too_long": 0
+    }
+  },
+  "files": {
+    "train": {
+      "path": "train.jsonl",
+      "n": 60000,
+      "tasks": {
+        "enron_spam": 11812,
+        "sst2": 3000,
+        "emotion": 6000,
+        "boolq": 6000,
+        "ag_news": 6597,
+        "ag_news_verification": 1109,
+        "mnli": 13591,
+        "mnli_verification": 2330,
+        "sst5": 3000,
+        "policy_counterfactual": 2000,
+        "typed_decisions": 4000,
+        "sst2_verification": 561
+      },
+      "sha256": "07e3395d464794f32fdf4790815af9ee76a8d4eeb28f73313cd4427e0434fdef"
+    },
+    "dev": {
+      "path": "dev.jsonl",
+      "n": 2050,
+      "tasks": {
+        "typed_decisions": 1000,
+        "enron_spam": 150,
+        "sst2": 150,
+        "sst5": 150,
+        "emotion": 150,
+        "boolq": 150,
+        "mnli": 150,
+        "ag_news": 150
+      },
+      "sha256": "d46758f4b71eeb4774dc881136c56aa6a3f42ec715e9e5d40040bccbc13904e6"
+    },
+    "cal": {
+      "path": "cal.jsonl",
+      "n": 3100,
+      "tasks": {
+        "sst5": 300,
+        "emotion": 300,
+        "typed_decisions": 1000,
+        "sst2": 300,
+        "enron_spam": 300,
+        "mnli": 300,
+        "ag_news": 300,
+        "boolq": 300
+      },
+      "sha256": "2fde7f45dce3440abfde145bb30ad61e2643b1f853866b5760b235685328dc1c"
+    },
+    "test": {
+      "path": "test.jsonl",
+      "n": 5277,
+      "tasks": {
+        "ag_news": 300,
+        "imdb": 300,
+        "anli": 300,
+        "typed_decisions": 2000,
+        "mnli": 300,
+        "emotion": 300,
+        "rte": 277,
+        "sst5": 300,
+        "hans": 300,
+        "boolq": 300,
+        "enron_spam": 300,
+        "sst2": 300
+      },
+      "sha256": "d5f92e48cf742aecb3c8e40714cb51ddd72fefd176a95dc8b7209523e2daa2bb"
+    },
+    "counterfactual_test": {
+      "path": "counterfactual_test.jsonl",
+      "n": 400,
+      "tasks": {
+        "policy_counterfactual": 400
+      },
+      "sha256": "a4b4a435a7a91f49a57bcaf4cb758f56fb530eed0aeac3166cd0220dbd4401df"
+    }
+  },
+  "caveats": [
+    "This is a new CUDA experiment; prior MLX v2 artifacts remain unchanged.",
+    "Legacy five-task and RTE tests are historical regression sets, not unseen benchmark discovery.",
+    "OOD is relative to this fine-tuning; base pretraining contamination is unknown.",
+    "All source text must fit 1024 tokens; full-length rejection counts are reported, so this is a length-filtered suite.",
+    "Challenge gold rows are lexically selected candidates, not yet mined v1 mistakes.",
+    "Synthetic counterfactual results describe this generator, not general real-world reasoning.",
+    "Typed-decisions targets are teacher distributions and are reported separately.",
+    "Training and calibration source licenses remain upstream; this bundle is for the user's experiment, not a dataset republication."
+  ],
+  "train_pools": {
+    "challenge": 12000,
+    "core": 30000,
+    "new": 18000
+  }
+}

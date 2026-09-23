@@ -1,0 +1,14 @@
+{
+  "temperature": 1.0397967702303978,
+  "calibration_n": 3100,
+  "objective": "sample_mean_soft_cross_entropy",
+  "bounds": [
+    0.05,
+    20
+  ],
+  "nll_before": 0.5145262753826555,
+  "nll_after": 0.5142383877082928,
+  "backend": "mlx",
+  "model": "results/merged_bf16",
+  "source_sha256": "2fde7f45dce3440abfde145bb30ad61e2643b1f853866b5760b235685328dc1c"
+}
