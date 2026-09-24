@@ -16,6 +16,8 @@ tags:
 ---
 # Jev-Style-Qwen3.5-2B-Decision v2 (HF BF16)
 
+**Website:** [jevstyle.com](https://jevstyle.com/#v2) — all JevStyle decision models, benchmarks and quickstart in one place.
+
 A **Jev-style decision model** for classification, routing and typed choices. Give it a state, a question and a list of options; one prefill returns a selected option **with calibrated probabilities**.
 
 | Build | Weight size | Inference |
@@ -173,6 +175,6 @@ Apache-2.0. See [LICENSE](LICENSE). This release builds on Qwen3.5-2B-Base and J
 
 ## Contact
 
-I welcome internship, employment, and research collaboration opportunities. Please contact me at [**yanhcaoliang369@gmail.com**](mailto:yanhcaoliang369@gmail.com).
+I welcome internship, employment, and research collaboration opportunities. Please contact me at [**yanchaoliang369@gmail.com**](mailto:yanchaoliang369@gmail.com).
 
-欢迎提供实习、工作及科研合作机会，请邮件联系：[yanhcaoliang369@gmail.com](mailto:yanhcaoliang369@gmail.com)。
+欢迎提供实习、工作及科研合作机会，请邮件联系：[yanchaoliang369@gmail.com](mailto:yanchaoliang369@gmail.com)。
