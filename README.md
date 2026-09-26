@@ -13,6 +13,7 @@ tags:
 - qwen3.5
 - jev-style
 - single-prefill
+new_version: chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 ---
 # Jev-Style-Qwen3.5-2B-Decision v2 (HF BF16)
 
