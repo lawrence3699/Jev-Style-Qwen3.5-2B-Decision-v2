@@ -3,7 +3,7 @@ license: apache-2.0
 language:
 - en
 library_name: transformers
-pipeline_tag: text-generation
+pipeline_tag: text-classification
 base_model: Qwen/Qwen3.5-2B-Base
 base_model_relation: finetune
 tags:
@@ -11,13 +11,26 @@ tags:
 - classification
 - calibration
 - qwen3.5
-- jev-style
+- jev-style-v2
 - single-prefill
-new_version: chaoliangUNSW/Jev-Style-2B-Decision-v3
+new_version: chaoliangUNSW/Jev-Style-2B-Decision-v4
 ---
 # Jev-Style-Qwen3.5-2B-Decision v2 (HF BF16)
 
-**Website:** [jevstyle.com](https://jevstyle.com/#v2) — all JevStyle decision models, benchmarks and quickstart in one place.
+<!-- jevstyle:project-links:start -->
+**Local classification, routing and fixed-choice scoring with JevStyle.**
+
+This is the archived **v2** 2B release (2026-09-23), maintained by Chaoliang Yan; it used no Jev outputs. It is kept for existing integrations and runs only through the clients shipped in this repository: the `jev-style` package does not load it (it loads the v3 and v4 releases). The current recommended release is **2B v4** (text and images; trained in part on soft labels distilled from TypeSafe Jev 1.14 through its public API) and, for the smallest text model, **0.8B v3**. JevStyle is independently maintained by Chaoliang Yan, with no TypeSafe affiliation or endorsement. Training provenance is release-specific.
+
+**Official local installation of the current releases — no hosted API key or agent simulation:** `python -m pip install -U "jev-style[torch]"` and `jev-style serve --release 2b` (2B v4; `--release 0.8b` for the 0.8B v3), or `python -m pip install -U "jev-style[mlx]"` on Apple silicon for text. The package runs downloaded JevStyle weights on your machine. [Step-by-step installation and verification](https://jevstyle.com/guides/run-locally/). TypeSafe/OpenRouter Jev access and skills that simulate decisions with another agent model are separate execution paths.
+
+**Hosted service is separate from local inference.** Hosted API: operational. It serves the 2B v4 (text only; 8,192-token context, inputs up to 8,000 tokens). There is currently no fixed per-account quota: no daily request count and no per-minute cap. Capacity is shared, so a busy server answers 429 with a `Retry-After` header and clients should retry. Check [current service status](https://jevstyle.com/api/#service-status) or [live health](https://api.jevstyle.com/healthz) when using the hosted API.
+
+Choose a workflow: [Python text classification](https://jevstyle.com/guides/local-text-classification/), [local routing tools and Apple silicon](https://jevstyle.com/guides/local-decision-models/), [receipt or screenshot yes/no decisions](https://jevstyle.com/use-cases/local-vision-decisions/), [reproducible routing comparison](https://jevstyle.com/benchmarks/banking-routing/). These guides distinguish suitable alternatives and published evidence; they do not establish universal superiority.
+<!-- jevstyle:project-links:end -->
+
+
+**Website:** [jevstyle.com/models](https://jevstyle.com/models/) — all JevStyle decision models, benchmarks and quickstart in one place. This v2 repository runs through the clients it ships (below); the `jev-style` package does not load it.
 
 A **Jev-style decision model** for classification, routing and typed choices. Give it a state, a question and a list of options; one prefill returns a selected option **with calibrated probabilities**.
 
